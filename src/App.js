@@ -2,46 +2,59 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image'
 
 function App() {
   return (
     <Container>
+      {/* Theme colors and colors usage */}
+      <p className="text-bg-primary text-secondary">Hello world</p>
+      {/* Light, Dark and muted*/}
+      <p className=" text-bg-light">Hello world</p>
+      {/* opacity */}
+      {/* 25,50,75 and 100 */}
+      <p className="text-black-50">Hello world</p>
 
-      {/* Headings */}
-        <h1>Hello world</h1>
-        <h3>Hello world</h3>
-        <p>Hello world</p>
-        <p className="h1 text-muted">Hello world</p>
-      {/* Display Headings */}
-       {/* 1...5 */}
-        <h1 className="display-1">Hello world</h1>
-        <h1 className="display-3">Hello world</h1>
-        <h1 className="display-5">Hello world</h1>
+      {/* ---------------------------------------------------------------------------- */}
 
-      {/* Lead and muted-text */}
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus assumenda, est nemo sed voluptatem dolorem voluptates rerum quis necessitatibus amet repudiandae a odio hic provident quaerat? Maiores asperiores neque commodi.</p>
-        <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, maxime! Quis, quibusdam. Iusto itaque eveniet quos error voluptatibus excepturi inventore sapiente culpa deserunt mollitia. Eaque veritatis laboriosam quod in fugiat!</p>
-      {/* Text Alignment */}
+      {/* Box Model classes */}
 
-        <h3 className="display-5 text-center">Hello world</h3>
-        <h3 className="display-5 text-end">Hello world</h3>
+      {/* Padding */}
+      {/* 0 - to remove  1...5  auto */}
+      <p className="text-bg-warning p-5">Hello world</p>
+      <p className="text-bg-warning p-3">Hello world</p>
 
-      {/* Text Transform */}
-        <p className="text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum alias ipsam nesciunt cum iure error assumenda. Maxime amet, omnis nulla corrupti inventore pariatur ad dicta totam velit possimus id.</p>
-        <p className="text-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum alias ipsam nesciunt cum iure error assumenda. Maxime amet, omnis nulla corrupti inventore pariatur ad dicta totam velit possimus id.</p>
+      {/* t - top, b -bottom, s - start, e - end,x - Horizontal, y- Vertical auto */}
+      <p className="text-bg-warning py-3 ">Hello world</p>
 
-      {/* Font Size */}
-          <h6 className="fs-6">Hello world</h6>
+      {/* remove */}
+      <p className="text-bg-warning p-3 pt-0">Hello world</p>
 
-      {/* Font Weight and styles */}
-          <p className="fw-bold">Hello world</p>
-          <p className="fst-italic">Hello world</p>
+      {/* ---------------------------------------------------------------------------------- */}
 
-      {/* Text Decoration */}
-           <p className="text-decoration-underline">Hello world</p>
-           <a href="#" className="text-decoration-none"> Hello</a>
-      <Image src={require('./assets/one.jpg')} fluid thumbnail></Image>
+      {/* Margin */}
+      {/* 0 - to remove  1...5  auto */}
+      <p className="text-bg-info p-3 m-5">Margin</p>
+      {/* t - top, b -bottom, s - start, e - end, auto */}
+      <p className="text-bg-info p-3 mt-5 mb-0">Margin</p>
+
+      <p className="text-bg-danger m-auto" style={{width:200}}>Hello world</p>
+
+      {/* remove */}
+
+      {/* --------------------------------------------------------------------------------------- */}
+      {/* Border */}
+      {/* 0 - remove 1...5 - border */}
+      <p className="text-bg-info p-3 mt-5 border">Border</p>
+
+      {/* Border Width */}
+      <p className="text-bg-info p-3 mt-5 border border-3 border-danger border-bottom-0 border-start-0">Border</p>
+
+
+      {/* border color and remove*/}
+
+      {/* rounded, pill and circle*/}
+      <p className="text-bg-info p-3 mt-5 mb-0 border rounded-pill">Margin</p>
+
     </Container>
   );
 }
