@@ -6,55 +6,38 @@ import { Container } from 'react-bootstrap';
 function App() {
   return (
     <Container>
-      {/* Theme colors and colors usage */}
-      <p className="text-bg-primary text-secondary">Hello world</p>
-      {/* Light, Dark and muted*/}
-      <p className=" text-bg-light">Hello world</p>
-      {/* opacity */}
-      {/* 25,50,75 and 100 */}
-      <p className="text-black-50">Hello world</p>
+       {/* display */}
+       {/* hide and show */}
+       <p className="m-3 p-3 text-bg-primary d-block">Display</p>
+       {/* flex */}
+       <div className="d-flex flex-column align-items-end">
+          <p className="m-2 p-2 text-bg-primary w-50 align-self-start">Flex</p>
+          <p className="m-2 p-2 text-bg-primary w-50">Flex</p>
+          <p className="m-2 p-2 text-bg-primary w-50">Flex</p>
+       </div>
 
-      {/* ---------------------------------------------------------------------------- */}
+       <div className="d-flex justify-content-center">
+          <p className="m-2 p-2 text-bg-primary w-25 ">Flex</p>
+          <p className="m-2 p-2 text-bg-primary w-25">Flex</p>
+          <p className="m-2 p-2 text-bg-primary w-25">Flex</p>
+       </div>
+      
+      {/* Stack */}
+      <div className="vstack gap-1 align-items-center">
+        <p className="m-3 p-3 text-bg-secondary w-50">Vstack</p>
+        <p className="m-3 p-3 text-bg-secondary w-50">Vstack</p>
+        <p className="m-3 p-3 text-bg-secondary w-50">Vstack</p>
+      </div>
 
-      {/* Box Model classes */}
-
-      {/* Padding */}
-      {/* 0 - to remove  1...5  auto */}
-      <p className="text-bg-warning p-5">Hello world</p>
-      <p className="text-bg-warning p-3">Hello world</p>
-
-      {/* t - top, b -bottom, s - start, e - end,x - Horizontal, y- Vertical auto */}
-      <p className="text-bg-warning py-3 ">Hello world</p>
-
-      {/* remove */}
-      <p className="text-bg-warning p-3 pt-0">Hello world</p>
-
-      {/* ---------------------------------------------------------------------------------- */}
-
-      {/* Margin */}
-      {/* 0 - to remove  1...5  auto */}
-      <p className="text-bg-info p-3 m-5">Margin</p>
-      {/* t - top, b -bottom, s - start, e - end, auto */}
-      <p className="text-bg-info p-3 mt-5 mb-0">Margin</p>
-
-      <p className="text-bg-danger m-auto" style={{width:200}}>Hello world</p>
-
-      {/* remove */}
-
-      {/* --------------------------------------------------------------------------------------- */}
-      {/* Border */}
-      {/* 0 - remove 1...5 - border */}
-      <p className="text-bg-info p-3 mt-5 border">Border</p>
-
-      {/* Border Width */}
-      <p className="text-bg-info p-3 mt-5 border border-3 border-danger border-bottom-0 border-start-0">Border</p>
-
-
-      {/* border color and remove*/}
-
-      {/* rounded, pill and circle*/}
-      <p className="text-bg-info p-3 mt-5 mb-0 border rounded-pill">Margin</p>
-
+      <div className="hstack justify-content-center gap-1">
+          <p className="m-2 p-2 text-bg-secondary w-25 ">Hstack</p>
+          <p className="m-2 p-2 text-bg-secondary w-25">Hstack</p>
+          <p className="m-2 p-2 text-bg-secondary w-25">Hstack</p>
+       </div>
+     
+      {/* shadow */}
+      <div className="shadow-none bg-light m-3 p-3">Shadow</div>
+      
     </Container>
   );
 }
