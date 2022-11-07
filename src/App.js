@@ -3,6 +3,7 @@ import "./App.css";
 import AppBar from "./components/AppBar";
 import Banner from "./components/Banner";
 import Menu from "./components/Menu";
+import PickoftheWeek from "./components/PickoftheWeek";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AppBar />
       <Banner />
       <Menu/>
+      <PickoftheWeek/>
     </>
   );
 }
