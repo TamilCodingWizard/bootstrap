@@ -25,13 +25,14 @@ const PickoftheWeek = () => {
               src={require("../assets/center.jpeg")}
               fluid={true}
               alt="pizza"
+              rounded
             ></Image>
           </Col>
           <Col md={5}>
             <div className="p-3">
               <h2 className="h1">Double Cheese Fajita</h2>
               <p className="lead text-muted">
-                Lorem ipsum dolor sit amet consectetur{" "}
+                Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
               </p>
               <Button variant="primary" onClick={() => setShow(true)}>
                 <i class="bi bi-basket"></i> Buy Now

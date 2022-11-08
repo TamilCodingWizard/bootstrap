@@ -4,6 +4,7 @@ import AppBar from "./components/AppBar";
 import Banner from "./components/Banner";
 import Menu from "./components/Menu";
 import PickoftheWeek from "./components/PickoftheWeek";
+import Comments from "./components/Comments";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Banner />
       <Menu/>
       <PickoftheWeek/>
+      <Comments/>
+      <div className="text-center my-3 text-primary small">Copyright 2022-2023</div>
     </>
   );
 }
