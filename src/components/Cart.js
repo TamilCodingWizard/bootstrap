@@ -11,10 +11,10 @@ const Cart = () => {
       <Button
         variant="light"
         onClick={() => setShow(!show)}
-        className="me-2 position-relative"
+        className="position-relative"
       >
-        <i class="bi bi-cart4"></i>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <i class="bi bi-cart4 px-0 mx-0"></i>
+        <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger">
           3
           <span class="visually-hidden">Cart</span>
         </span>
