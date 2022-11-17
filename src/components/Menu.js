@@ -9,7 +9,7 @@ const Menu = () => {
       <Container>
         <div className="text-center">
           <h3 className="text-primary my-3 py-5">
-            Treat yourself with our Everyday Menu <i class="bi bi-tiktok"></i>
+            Treat yourself with our Everyday Menu <i className="bi bi-tiktok"></i>
           </h3>
         </div>
         <Row>

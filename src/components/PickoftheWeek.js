@@ -15,7 +15,7 @@ const PickoftheWeek = () => {
     <section id="musttry" className="my-3">
       <div className="text-center my-2 py-3">
         <h2 className="display-5 text-primary">
-          <i class="bi bi-search-heart"></i> Pick of the Week!
+          <i className="bi bi-search-heart"></i> Pick of the Week!
         </h2>
       </div>
       <Container>
@@ -35,7 +35,7 @@ const PickoftheWeek = () => {
                 Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
               </p>
               <Button variant="primary" onClick={() => setShow(true)}>
-                <i class="bi bi-basket"></i> Buy Now
+                <i className="bi bi-basket"></i> Buy Now
               </Button>
             </div>
           </Col>

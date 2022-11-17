@@ -13,10 +13,10 @@ const Cart = () => {
         onClick={() => setShow(!show)}
         className="position-relative"
       >
-        <i class="bi bi-cart4 px-0 mx-0"></i>
-        <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger">
+        <i className="bi bi-cart4 px-0 mx-0"></i>
+        <span className="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger">
           3
-          <span class="visually-hidden">Cart</span>
+          <span className="visually-hidden">Cart</span>
         </span>
       </Button>
       <Offcanvas show={show} onHide={() => setShow(!show)} placement={"end"}>

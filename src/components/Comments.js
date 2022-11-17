@@ -10,7 +10,7 @@ const Comments = () => {
     <section id="contact" className="bg-light py-3">
       <div className="text-center my-2 py-3">
         <h2 className=" text-primary">
-          Comments <i class="bi bi-chat-left-heart"></i>
+          Comments <i className="bi bi-chat-left-heart"></i>
         </h2>
       </div>
       <Container>
@@ -19,7 +19,7 @@ const Comments = () => {
             <Form>
               <InputGroup className="mb-3">
                 <InputGroup.Text id="basic-addon1">
-                  <i class="bi bi-envelope-open"></i>
+                  <i className="bi bi-envelope-open"></i>
                 </InputGroup.Text>
                 <FloatingLabel controlId="floatingInput" label="Email address">
                   <Form.Control type="email" placeholder="name@example.com" />
@@ -28,7 +28,7 @@ const Comments = () => {
 
               <InputGroup className="mb-3">
                 <InputGroup.Text id="basic-addon1">
-                  <i class="bi bi-person-fill"></i>
+                  <i className="bi bi-person-fill"></i>
                 </InputGroup.Text>
                 <FloatingLabel controlId="floatingInput" label="Name">
                   <Form.Control type="text" placeholder="Name" />
